@@ -1,2 +1,2 @@
-# hackernews.katrotz.space
-Hacker news interface
+# Hackernews
+The alternatieve hacker news interface
