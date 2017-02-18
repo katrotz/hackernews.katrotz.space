@@ -24,8 +24,11 @@
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
     "rc": "1.0.1",
+    "request": "^2.79.0",
+    "rxjs": "^5.1.0",
     "sails": "~0.12.11",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "sails-mysql": "^0.11.5"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -40,5 +43,8 @@
     "url": "https://github.com/katrotz/hackernews.katrotz.space/issues"
   },
   "author": "katrotz@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sails-hook-autoreload": "^0.13.2"
+  }
 }

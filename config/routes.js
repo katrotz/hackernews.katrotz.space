@@ -33,8 +33,8 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    // view: 'index'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,32 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-
+  '/hackernews/showstories': {
+    controller: 'HackerNews',
+    action: 'showStories'
+  },
+  '/hackernews/askstories': {
+    controller: 'HackerNews',
+    action: 'askStories'
+  },
+  '/hackernews/jobstories': {
+    controller: 'HackerNews',
+    action: 'jobStories'
+  },
+  '/hackernews/beststories': {
+    controller: 'HackerNews',
+    action: 'bestStories'
+  },
+  '/hackernews/topstories': {
+    controller: 'HackerNews',
+    action: 'topStories'
+  },
+  '/hackernews/newstories': {
+    controller: 'HackerNews',
+    action: 'newStories'
+  },
+  '/hackernews/:id': {
+    controller: 'HackerNews',
+    action: 'news'
+  }
 };
