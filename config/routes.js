@@ -45,31 +45,31 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  '/hackernews/showstories': {
+  '/api/hackernews/showstories': {
     controller: 'HackerNews',
     action: 'showStories'
   },
-  '/hackernews/askstories': {
+  '/api/hackernews/askstories': {
     controller: 'HackerNews',
     action: 'askStories'
   },
-  '/hackernews/jobstories': {
+  '/api/hackernews/jobstories': {
     controller: 'HackerNews',
     action: 'jobStories'
   },
-  '/hackernews/beststories': {
+  '/api/hackernews/beststories': {
     controller: 'HackerNews',
     action: 'bestStories'
   },
-  '/hackernews/topstories': {
+  '/api/hackernews/topstories': {
     controller: 'HackerNews',
     action: 'topStories'
   },
-  '/hackernews/newstories': {
+  '/api/hackernews/newstories': {
     controller: 'HackerNews',
     action: 'newStories'
   },
-  '/hackernews/:id': {
+  '/api/hackernews/:id': {
     controller: 'HackerNews',
     action: 'news'
   }
