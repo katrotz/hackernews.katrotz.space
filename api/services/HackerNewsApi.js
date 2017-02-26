@@ -110,21 +110,21 @@ class HackerNewsApi {
 
       .then(lastItemRow => {
         if (lastItemRow) {
-          return lastItemRow;
+          return lastItemRow.id;
         }
 
         return Promise.reject(`Failed to fetch the latest stored item`);
       })
 
       .catch(error => {
-        return Promise.resolve({id: 0});
+        return Promise.resolve(0);
       })
 
-      .then(lastItemRow => {
+      .then(lastItemRowId => {
         return this.request(url)
           .then(ids => {
             // Filter all the stories that are already stored
-            return _.filter(ids, id => id > lastItemRow.id);
+            return _.filter(ids, id => id > lastItemRowId);
           });
       });
   }
@@ -154,7 +154,7 @@ class HackerNewsApi {
           return reject(error);
         }
 
-        sails.log.debug(`Request to ${url} completed`);
+        sails.log.verbose(`Request to ${url} completed`);
         return resolve(body);
       });
     });
