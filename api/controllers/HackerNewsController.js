@@ -1,5 +1,5 @@
 module.exports = {
-	news(req, res) {
+  news(req, res) {
     HackerNewsApi.getItem(req.params.id)
       .then(data => res.ok({data}))
       .catch(error => res.serverError({error}));

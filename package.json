@@ -1,8 +1,8 @@
 {
   "name": "hackernews.katrotz.space",
   "private": true,
-  "version": "0.0.0",
-  "description": "Hacker news interface",
+  "version": "0.1.0",
+  "description": "Backend implementation that syncs news.ycombinator.com articles and provides an API to query its contents",
   "keywords": [
     "hackernews",
     "ycombinator",
