@@ -17,7 +17,7 @@ class SyncService {
      * The polling interval
      * @type {number}
      */
-    this.interval = 20000;
+    this.interval = 60000;
   }
 
   /**
